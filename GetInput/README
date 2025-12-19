@@ -1,0 +1,16 @@
+Sums per minQ class and for reconstructed and generated data all output produced in main.
+
+To use:
+Make list of all output produced in main, separately for reconstructed and generated data and for the different minQ classes.
+
+Then run:
+./sum.exe list/withdepol/had_kaonspos_18x275Q1.out ../input_withdepol 321 data 18x275Q1
+
+with
+-) sum.exe: sum.exe for reconstructed data or sum_mc.exe for generated data
+-) list/withdepol/had_kaonspos_18x275Q1.out: list of output from main
+-) ../input_withdepol: directory where output is written to.
+-) 321: PID
+-) data: data (reconstructed data) or mc (generated data)
+-) 18x275Q1: beam energy and minQ class
+

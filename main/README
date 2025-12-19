@@ -1,0 +1,22 @@
+C++ code to read out EICRECON data and produce output files containing for each Q2, xB, z bin the number of hadrons for spin up (U) and spin down (D) as well as values of kin. variables.
+
+Each event is weighted according to a cross section calculated at NLO based on
+NNPDF30_nlo_as_0118 and DSSV FFs: Phys.Rev.Lett.101:072001,2008
+
+EICRECON data:
+root://dtn-eic.jlab.org//volatile/eic/EPIC/RECO/25.08.0/epic_craterlake/DIS/NC/18x275/minQ2=*/pythia8NCDIS_18x275_minQ2=*_beamEffects_xAngle=-0.025_hiDiv_1.0000.eicrecon.edm4eic.root
+
+with *=1, 10, 100, 1000
+
+dis.cc:
+depolarisation value set to 1 for the calculation of the systematic uncertainty
+(Avoids too large fluctuations given the limited available simulation data.)
+
+To run:
+./submit_e18p275_Q1.sh runlist.txt
+with runlist: list of EICRECON data.
+
+PID is 211 or 321
+
+Scripts to run on condor for minQ1 are provided.
+For other minQ, adjust accordingly.

@@ -1,0 +1,21 @@
+sumlum.C:
+combines all minQ data.
+
+
+plot_asymPub.C 
+prints out:
+-) reconstructed asymmetry, stat. unc., sys. unc., average of kinematic variables
+-) 'unfolded' asymmetry, stat. unc., sys. unc., average of kinematic variables,
+    where 'unfolded' asymmetry = the generated asymmetry
+With sys. unc.= difference between reconstructed and generated asymmetry.
+The limited available MC statistics does suffer from fluctuations, which enhance the sys. unc. for various bins.
+
+plots:
+the reconstructed and generated asymmetry.
+
+plot_asymPubwithout.C: same as plot_asymPub.C but for depol=1.
+
+plot_sysPub.C
+plots the preTDR plot sysPub_18x275_poskaons.pdf based on the output from the scripts above.
+Plot shows for a selection of zbins and Q^2 bins, the stat. and total uncertainty as a function of xB.
+

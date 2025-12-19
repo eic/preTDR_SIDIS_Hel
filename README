@@ -1,0 +1,11 @@
+Codes for evaluation of uncertainties of double-helicity asymmetry in SIDIS for positive kaons for preTDR.
+
+DIS kinematic variables are reconstructed using the electron method.
+For hadrons true PID is used.
+
+Order to process data:
+main
+GetInput
+ProduceOutput
+
+[binning: contains binning used for kinematic variables]
